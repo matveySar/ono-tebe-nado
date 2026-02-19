@@ -22,6 +22,8 @@
 
 .header__item {
     text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
 }
 
 .header__item-first {
@@ -32,13 +34,15 @@
     text-decoration: none;
 }
 
-.nav__link {}
+.nav__link {
+    font-size: 18px;
+}
 
 .header__link {}
 
 .header__logo {
     justify-self: center;
-    width: 148px;
+    width: 135px;
 }
 
 .header__logo-image {}
@@ -46,12 +50,21 @@
 .address {
     display: flex;
     flex-direction: column;
-    width: 240px;
+    align-items: flex-start;
+    max-width: 240px;
 
     justify-self: flex-end;
+
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.35;
 }
 
-.address__link {}
+.address__link {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
 
 .address__text {}
 
