@@ -11,20 +11,20 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <nav class="nav header__nav">
-                <ul class="nav__list header__list">
-                    <li class="nav__item header__item header-first nav__item--active">
-                        <a class="nav__link header__link" href="#">
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item header__links-list-item_no-bullit header__item--active">
+                        <a class="header__link" href="#">
                             главная
                         </a>
                     </li>
-                    <li class="nav__item header__item">
-                        <a class="nav__link header__link" href="#">
+                    <li class="header__item">
+                        <a class="header__link" href="#">
                             посмотреть лоты
                         </a>
                     </li>
-                    <li class="nav__item header__item">
-                        <a class="nav__link header__link" href="#">
+                    <li class="header__item">
+                        <a class="header__link" href="#">
                             об аукционе
                         </a>
                     </li>
@@ -57,9 +57,15 @@
             <section class="cover">
                 <div class="overlay"></div>
                 <h1 class="cover__title">
-                    <span class="cover__title-text cover__title-text--left">оно</span>
-                    <span class="cover__title-text cover__title-text--center">тебе</span>
-                    <span class="cover__title-text cover__title-text--right">надо</span>
+                    <span class="aligned-text aligned-text_left letter-spacing-extended">
+                        он<span class="no-letter-spacing">о</span>
+                    </span>
+                    <span class="aligned-text aligned-text_center letter-spacing-extended">
+                        теб<span class="no-letter-spacing">е</span>
+                    </span>
+                    <span class="aligned-text aligned-text_right letter-spacing-extended">
+                        над<span class="no-letter-spacing">о</span>
+                    </span>
                 </h1>
                 <div class="cover__description">
                     <p class="cover__description-text">
@@ -75,7 +81,7 @@
                     Лоты
                 </h2>
                 <ul class="lots__list">
-                    <li class="lots__item lots__item-first">
+                    <li class="card card_type_film">
                         <a class="lots__item-link" href="#">
                             <article class="lots__article">
                                 <div class="overlay"></div>
@@ -90,7 +96,7 @@
                             </article>
                         </a>
                     </li>
-                    <li class="lots__item lots__item-second">
+                    <li class="card card_type_book">
                         <a class="lots__item-link" href="#">
                             <article class="lots__article">
                                 <div class="overlay"></div>
@@ -111,7 +117,7 @@
                             </article>
                         </a>
                     </li>
-                    <li class="lots__item lots__item-third">
+                    <li class="card card_type_picture">
                         <a class="lots__item-link" href="#">
                             <article class="lots__article">
                                 <div class="overlay"></div>
@@ -143,7 +149,7 @@
                     alt="Оно тебе надо"
                     />
                 </div>
-                <div class="about__content">
+                <div class="about__column">
                     <h2 class="section__title about__title">
                         Об аукционе
                     </h2>
@@ -192,18 +198,18 @@
             </address>
             <nav class="footer__nav">
                 <ul class="footer__list">
-                    <li class="nav__item footer__item nav__item--active">
-                        <a class="nav__link footer__link" href="#">         <!-- у ссылок класс "nav__link", как в header -->
+                    <li class="footer__item footer__item--active">
+                        <a class="footer__link" href="#">         <!-- у ссылок класс "nav__link", как в header -->
                             главная
                         </a>
                     </li>
-                    <li class="nav__item footer__item">
-                        <a class="nav__link footer__link" href="#">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
                             посмотреть лоты
                         </a>
                     </li>
-                    <li class="nav__item footer__item">
-                        <a class="nav__link footer__link" href="#">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
                             об аукционе
                         </a>
                     </li>
