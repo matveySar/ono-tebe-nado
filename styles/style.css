@@ -11,7 +11,11 @@
     align-items: center;
 }
 
+.nav {}
+
 .header__nav {}
+
+.nav__list {}
 
 .header__list {
     display: flex;
@@ -20,17 +24,21 @@
     list-style-type: circle;
 }
 
-.header__item {
+.nav__item {
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 4px;
+}
+
+.header__item {
+
 }
 
 .header__item-first {
     list-style: none;
 }
 
-.header__item--active {
+.nav__item--active {
     text-decoration: none;
 }
 
@@ -143,7 +151,7 @@
 
 .cover__description-text {
     text-transform: uppercase;
-    word-spacing: 26px;
+    word-spacing: 18.5px;
 }
 
 .cover__description-button {
@@ -159,7 +167,11 @@
     margin: 0 24px 120px;
 }
 
-.section__title {}
+.section__title {
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+}
 
 .lots__title {
     margin: 0 auto 27px 40px;
@@ -167,14 +179,15 @@
 
 .lots__list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+
     margin-bottom: 30px;
 }
 
 .lots__item {
     width: 334px;
-    height: 596px;
-    padding: 48px 40px;
+    min-height: 596px;
 }
 
 .lots__item-first {
@@ -199,29 +212,63 @@
 }
 
 .lots__article {
+    position: relative;
+
+    padding: 48px 40px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+
+    color: #fff;
 }
 
-.lots__item-title {}
+.lots__item-title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.2;
 
-.lots__item-link {}
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
 
-.lots__item-text {}
+    z-index: 1;
+}
+
+.lots__item-link {
+    display: block;
+    height: 100%;
+}
+
+.lots__item-text {
+    font-size: 20px;
+    line-height: 1.2;
+
+    z-index: 1;
+}
 
 .lots__link {
     margin-left: 40px;
+
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
 }
 
 /*========ABOUT========*/
 
 .about {
     margin: 0 24px 180px;
-    display: flex;
-    gap: 72px;
-    padding: 35px 0 0 47px;
+    padding-top: 35px;
+
+    display: grid;
+    grid-template-columns: 334px 1fr;
+    gap: 25px;
+
+    min-height: 595px;
 }
 
 .about__logo {
@@ -234,11 +281,11 @@
     justify-content: center;
     align-items: center;
 
-    flex-shrink: 0;
+    justify-self: center;
 }
 
 .about__logo-image {
-    width: 141px;
+    width: 147px;
 }
 
 .about__content {
@@ -253,6 +300,9 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+
+    font-size: 20px;
+    line-height: 1.2;
 }
 
 /*========FOOTER========*/
@@ -266,6 +316,7 @@
 
 .footer__address {
     justify-self: flex-start;
+    max-width: 260px;
 }
 
 .footer__nav {

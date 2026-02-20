@@ -11,19 +11,19 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__item header__item-first header__item--active">
+            <nav class="nav header__nav">
+                <ul class="nav__list header__list">
+                    <li class="nav__item header__item header-first nav__item--active">
                         <a class="nav__link header__link" href="#">
                             главная
                         </a>
                     </li>
-                    <li class="header__item">
+                    <li class="nav__item header__item">
                         <a class="nav__link header__link" href="#">
                             посмотреть лоты
                         </a>
                     </li>
-                    <li class="header__item">
+                    <li class="nav__item header__item">
                         <a class="nav__link header__link" href="#">
                             об аукционе
                         </a>
@@ -76,56 +76,59 @@
                 </h2>
                 <ul class="lots__list">
                     <li class="lots__item lots__item-first">
-                        <article class="lots__article">
-                            <h3 class="lots__item-title">
-                                <a class="lots__item-link" href="#">
+                        <a class="lots__item-link" href="#">
+                            <article class="lots__article">
+                                <div class="overlay"></div>
+                                <h3 class="lots__item-title">
                                     Фильм режиссёра, который бросил киношколу
-                                </a>
-                            </h3>
-                            <p class="lots__item-text">
-                                Не просто бросил, а ушёл с первой лекции. 
-                                Какой была бы ваша ставка, если бы вы не 
-                                знали, что режиссёр — Пол Томас Андерсон?
-                            </p>
-                        </article>
+                                </h3>
+                                <p class="lots__item-text">
+                                    Не просто бросил, а ушёл с первой лекции. 
+                                    Какой была бы ваша ставка, если бы вы не 
+                                    знали, что режиссёр — Пол Томас Андерсон?
+                                </p>
+                            </article>
+                        </a>
                     </li>
                     <li class="lots__item lots__item-second">
-                        <article class="lots__article">
-                            <h3 class="lots__item-title">
-                                <a class="lots__item-link" href="#">
+                        <a class="lots__item-link" href="#">
+                            <article class="lots__article">
+                                <div class="overlay"></div>
+                                <h3 class="lots__item-title">
                                     Книга, где описан один скучный день из 
                                     жизни рекламного агента
-                                </a>
-                            </h3>
-                            <p class="lots__item-text">
-                                Объёмом почти в тысячу страниц. Иногда без 
-                                знаков препинания и с переходами на 
-                                древнеанглийский. В ней одновременно 
-                                рассказывается о 16 июня 1904 года и об 
-                                истории литературы, начиная с античных 
-                                времён. И это всё накладывается на эпическую 
-                                поэму Гомера. Сколько бы вы поставили на 
-                                «Улисса» Джеймса Джойса?
-                            </p>
-                        </article>
+                                </h3>
+                                <p class="lots__item-text">
+                                    Объёмом почти в тысячу страниц. Иногда без 
+                                    знаков препинания и с переходами на 
+                                    древнеанглийский. В ней одновременно 
+                                    рассказывается о 16 июня 1904 года и об 
+                                    истории литературы, начиная с античных 
+                                    времён. И это всё накладывается на эпическую 
+                                    поэму Гомера. Сколько бы вы поставили на 
+                                    «Улисса» Джеймса Джойса?
+                                </p>
+                            </article>
+                        </a>
                     </li>
                     <li class="lots__item lots__item-third">
-                        <article class="lots__article">
-                            <h3 class="lots__item-title">
-                                <a class="lots__item-link" href="#">
+                        <a class="lots__item-link" href="#">
+                            <article class="lots__article">
+                                <div class="overlay"></div>
+                                <h3 class="lots__item-title">
                                     Картина, которую повторит даже 5-летний 
                                     сын маминой подруги
-                                </a>
-                            </h3>
-                            <p class="lots__item-text">
-                                Ну действительно, там линия, тут кружочек, 
-                                а здесь и вовсе что-то похожее на 
-                                инфузорию-туфельку. Никаких полей, лесов, 
-                                котиков... Сколько бы вы на такое поставили, 
-                                если бы не знали, что это — одна из революционных 
-                                работ Кандинского?
-                            </p>
-                        </article>
+                                </h3>
+                                <p class="lots__item-text">
+                                    Ну действительно, там линия, тут кружочек, 
+                                    а здесь и вовсе что-то похожее на 
+                                    инфузорию-туфельку. Никаких полей, лесов, 
+                                    котиков... Сколько бы вы на такое поставили, 
+                                    если бы не знали, что это — одна из революционных 
+                                    работ Кандинского?
+                                </p>
+                            </article>
+                        </a>
                     </li>
                 </ul>
                 <a class="lots__link" href="#">
@@ -189,17 +192,17 @@
             </address>
             <nav class="footer__nav">
                 <ul class="footer__list">
-                    <li class="footer__item footer__item--active">
+                    <li class="nav__item footer__item nav__item--active">
                         <a class="nav__link footer__link" href="#">         <!-- у ссылок класс "nav__link", как в header -->
                             главная
                         </a>
                     </li>
-                    <li class="footer__item">
+                    <li class="nav__item footer__item">
                         <a class="nav__link footer__link" href="#">
                             посмотреть лоты
                         </a>
                     </li>
-                    <li class="footer__item">
+                    <li class="nav__item footer__item">
                         <a class="nav__link footer__link" href="#">
                             об аукционе
                         </a>
